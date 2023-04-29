@@ -9,5 +9,6 @@
 
 ## [Marzipano](https://www.marzipano.net/)
 
+- To align your panora use think [link](https://straighten.imageonline.co/)
 - You can convert panorama images to this [link](https://jaxry.github.io/panorama-to-cubemap/)
 - Alternative link will be [Panorama to Cubemap](https://allestaire.github.io/ptc.html)
