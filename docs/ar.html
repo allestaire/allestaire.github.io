@@ -4,7 +4,7 @@
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="assets/arjs/js/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
+        <a-scene embedded arjs="debug: true; markersAreaEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         <a-marker type='pattern' url='assets/arjs/marker/pokeball-v2.patt'>
             <a-box position='0 0.5 0' scale="1 1 1" rotation="-90 0 0" material='opacity: 0; side: double;color:pink;'>
                 <a-entity
@@ -27,7 +27,10 @@
                 </a-entity>
                 <a-image src="assets/arjs/images/bike-invitation.png"></a-image>
             </a-box>
-        </a-marker>  
+        </a-marker>
+        <a-marker type="barcode" value="1">
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
